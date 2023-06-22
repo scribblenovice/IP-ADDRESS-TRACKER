@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<link rel="stylesheet" href="./tailwindsrc/output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>IP TRACKER</title>
+</head>
+<body>
+    <h1 class="font-bold mt-5 text-2xl text-center">IP TRACKER USING IP ADDRESS ASSIGNED BY ISP</h1>
+    <div class="mt-5">
+        <form action="" id="form" class="flex justify-center flex-col w-full relative">
+            <input type="text" id="ip-input" class="w-11/12 md:w-3/5 mx-auto py-2" placeholder="enter your ip address">
+            <div id="errormsg" class="h-2 error text-red-400 text-center text-xs"></div>
+            <button type="submit" id="submitbtn" class=" mx-auto rounded-full bg-blue-500  text-white font-bold mt-5">TRACK LOCATION</button>
+        </form>
+    </div>
+    <div class="w-11/12 md:w-3/5 mx-auto flex justify-evenly items-center bg-black text-white font-bold rounded-md mt-5 mb-3">
+        <div class="country flex flex-col  pt-5 pb-5">
+            <h2 class="text-center">COUNTRY:</h2>
+            <div class="flex mt-2">
+                <span id="name" class="text-2xl"></span><span><img class="ml-2" id="flag" alt=""></span>
+            </div>
+            </div>
+        <div class=" pt-5 pb-5">
+            <h1 class="text-center">ISP:</h1>
+            <p class="text-2xl mt-2" id="isp"></p></div>
+        <div class="state pt-5 pb-5">
+            <h1 class="text-center">STATE:</h1>
+            <p class="text-2xl mt-2" id="state"></p>
+        </div>
+    </div>
+    <div id="mapContain">
+       
+    </div>
+</body>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<script src="./tracker.js"></script>
+</html>

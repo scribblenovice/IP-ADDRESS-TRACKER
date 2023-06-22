@@ -1,0 +1,49 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+    justify-content: space-between;
+}
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+background-repeat: no-repeat;
+height: 97vh;
+ }
+#ip-input{
+   border: 3px solid rgb(4, 4, 4);
+   border-radius: 5px;
+   font-size: 1.1rem;
+   text-align: center;
+   letter-spacing: 1px;
+}
+#ip-input:focus{
+    outline: none;
+}
+
+#map{
+    width: 100vw;
+    height: 51vh;
+}
+#submitbtn{
+    padding: 5px 10px;
+}
